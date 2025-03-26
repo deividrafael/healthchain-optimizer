@@ -12,8 +12,8 @@ interface GlassmorphicCardProps extends HTMLAttributes<HTMLDivElement> {
 const GlassmorphicCard = forwardRef<HTMLDivElement, GlassmorphicCardProps>(
   ({ className, children, intensity = "medium", border = true, hoverEffect = false, delay, ...props }, ref) => {
     const intensityMap = {
-      high: "backdrop-blur-xl bg-white/10 dark:bg-black/30",
-      medium: "backdrop-blur-md bg-white/10 dark:bg-black/20",
+      high: "backdrop-blur-xl bg-white/5 dark:bg-black/30",
+      medium: "backdrop-blur-md bg-white/5 dark:bg-black/20",
       low: "backdrop-blur-sm bg-white/5 dark:bg-black/10",
     };
 

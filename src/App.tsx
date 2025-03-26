@@ -15,7 +15,16 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <div className="min-h-screen bg-[#0e1a28] text-white">
+        <div 
+          className="min-h-screen bg-[#0e1a28] text-white bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url("/lovable-uploads/c26bc424-605b-4ee8-aafd-2a6e50e05d44.png")',
+            backgroundSize: '400px',
+            backgroundPosition: 'center',
+            backgroundBlendMode: 'overlay',
+            backgroundColor: 'hsl(var(--background))'
+          }}
+        >
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="*" element={<NotFound />} />

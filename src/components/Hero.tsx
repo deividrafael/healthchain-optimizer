@@ -12,14 +12,14 @@ const Hero = () => {
     >
       {/* Background gradient */}
       <AnimatedGradient 
-        className="absolute inset-0 opacity-30"
+        className="absolute inset-0 opacity-20"
         direction="radial"
         colors={["from-blue-400", "via-blue-600", "to-blue-900"]}
       />
       
       {/* Decorative elements */}
-      <div className="absolute top-20 right-20 w-64 h-64 bg-blue-500/10 rounded-full filter blur-3xl animate-float"></div>
-      <div className="absolute bottom-20 left-20 w-72 h-72 bg-blue-400/10 rounded-full filter blur-3xl animate-float" style={{ animationDelay: "2s" }}></div>
+      <div className="absolute top-20 right-20 w-64 h-64 bg-blue-500/5 rounded-full filter blur-3xl animate-float"></div>
+      <div className="absolute bottom-20 left-20 w-72 h-72 bg-blue-400/5 rounded-full filter blur-3xl animate-float" style={{ animationDelay: "2s" }}></div>
       
       <div className="section-container grid md:grid-cols-2 gap-10 items-center">
         <div className="space-y-6 max-w-xl">
@@ -77,7 +77,7 @@ const Hero = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-blue-900/50 to-blue-800/20 rounded-xl"></div>
             <div className="relative z-10 flex justify-center items-center p-4">
               <img 
-                src="/lovable-uploads/88c31cd8-fe2c-4e56-98e1-871cb7806c2f.png" 
+                src="/lovable-uploads/c26bc424-605b-4ee8-aafd-2a6e50e05d44.png" 
                 alt="HealthChain DNA Logo" 
                 className="w-3/4 max-w-[220px]"
               />
