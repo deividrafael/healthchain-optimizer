@@ -12,17 +12,25 @@ const Hero = () => {
     >
       {/* Background gradient */}
       <AnimatedGradient 
-        className="absolute inset-0 opacity-10"
+        className="absolute inset-0 opacity-30"
         direction="radial"
-        colors={["from-health-600", "via-blue-500", "to-indigo-600"]}
+        colors={["from-blue-400", "via-blue-600", "to-blue-900"]}
       />
       
       {/* Decorative elements */}
-      <div className="absolute top-20 right-20 w-64 h-64 bg-health-500/10 rounded-full filter blur-3xl animate-float"></div>
-      <div className="absolute bottom-20 left-20 w-72 h-72 bg-blue-500/10 rounded-full filter blur-3xl animate-float" style={{ animationDelay: "2s" }}></div>
+      <div className="absolute top-20 right-20 w-64 h-64 bg-blue-500/10 rounded-full filter blur-3xl animate-float"></div>
+      <div className="absolute bottom-20 left-20 w-72 h-72 bg-blue-400/10 rounded-full filter blur-3xl animate-float" style={{ animationDelay: "2s" }}></div>
       
       <div className="section-container grid md:grid-cols-2 gap-10 items-center">
         <div className="space-y-6 max-w-xl">
+          <div className="flex justify-center md:justify-start mb-8">
+            <img 
+              src="/lovable-uploads/e0def6fb-f6f4-4d79-886c-25489a5131b5.png" 
+              alt="HealthChain Solutions Logo" 
+              className="h-20 md:h-24"
+            />
+          </div>
+          
           <AnimatedText 
             text="Otimizando auditorias hospitalares com tecnologia de ponta"
             as="h1"
@@ -41,14 +49,14 @@ const Hero = () => {
           <div className="flex flex-wrap gap-4 pt-2">
             <Button 
               size="lg" 
-              className="bg-health-600 hover:bg-health-700 text-white transition-all duration-300 hover:shadow-lg hover:translate-y-[-2px]"
+              className="bg-blue-500 hover:bg-blue-600 text-white transition-all duration-300 hover:shadow-lg hover:translate-y-[-2px]"
             >
               Conheça nossas soluções
             </Button>
             <Button 
               size="lg" 
               variant="outline"
-              className="border-health-600 text-health-600 hover:bg-health-50 transition-all duration-300"
+              className="border-blue-500 text-blue-400 hover:bg-blue-900/20 transition-all duration-300"
             >
               Agende uma demonstração
             </Button>
@@ -62,17 +70,17 @@ const Hero = () => {
         
         <div className="relative hidden md:block">
           <GlassmorphicCard 
-            className="p-6 animate-float"
+            className="p-6 animate-float relative"
             intensity="medium"
             hoverEffect
           >
-            <div className="aspect-square w-full max-w-md mx-auto rounded-xl overflow-hidden bg-gradient-to-br from-health-50 to-health-100 dark:from-health-900 dark:to-health-800 flex items-center justify-center">
-              <div className="w-3/4 h-3/4 relative">
-                <div className="absolute inset-0 bg-health-500/20 rounded-full animate-pulse-slow"></div>
-                <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[85%] h-[85%] border-4 border-health-500/30 rounded-full"></div>
-                <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[70%] h-[70%] border-4 border-health-500/50 rounded-full"></div>
-                <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-3xl text-health-600">HC</div>
-              </div>
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-900/50 to-blue-800/20 rounded-xl"></div>
+            <div className="relative z-10 flex justify-center items-center p-4">
+              <img 
+                src="/lovable-uploads/88c31cd8-fe2c-4e56-98e1-871cb7806c2f.png" 
+                alt="HealthChain DNA Logo" 
+                className="w-3/4 max-w-[220px]"
+              />
             </div>
           </GlassmorphicCard>
 
@@ -83,7 +91,7 @@ const Hero = () => {
             hoverEffect
           >
             <div className="flex items-center space-x-3">
-              <div className="h-10 w-10 rounded-full bg-health-600 flex items-center justify-center text-white font-bold">+</div>
+              <div className="h-10 w-10 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold">+</div>
               <div>
                 <p className="font-semibold text-foreground">Eficiência Operacional</p>
                 <p className="text-sm text-muted-foreground">Reduza custos operacionais</p>

@@ -40,8 +40,12 @@ const Navbar = () => {
         intensity={isScrolled ? "medium" : "low"}
       >
         <div className="flex items-center">
-          <a href="#home" className="text-xl font-bold text-foreground">
-            HealthChain<span className="text-health-600">Solutions</span>
+          <a href="#home" className="flex items-center">
+            <img 
+              src="/lovable-uploads/89198357-5908-4943-bff0-074e04bf999a.png" 
+              alt="HealthChain Logo" 
+              className="h-8 mr-2" 
+            />
           </a>
         </div>
 
@@ -60,12 +64,12 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-foreground hover:text-health-600 transition-colors font-medium"
+                className="text-foreground hover:text-blue-400 transition-colors font-medium"
               >
                 {link.name}
               </a>
             ))}
-            <Button className="bg-health-600 hover:bg-health-700 text-white">
+            <Button className="bg-blue-500 hover:bg-blue-600 text-white">
               Entre em contato
             </Button>
           </nav>
@@ -83,13 +87,13 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-foreground hover:text-health-600 transition-colors font-medium py-2"
+                className="text-foreground hover:text-blue-400 transition-colors font-medium py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.name}
               </a>
             ))}
-            <Button className="bg-health-600 hover:bg-health-700 text-white w-full mt-2">
+            <Button className="bg-blue-500 hover:bg-blue-600 text-white w-full mt-2">
               Entre em contato
             </Button>
           </nav>
