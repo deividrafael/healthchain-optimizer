@@ -1,6 +1,7 @@
 
 import { FeatureCard } from "@/components/ui/FeatureCard";
 import { ClipboardCheck, Database, BarChart3, ShieldCheck, FileSearch, Brain } from "lucide-react";
+import { GlassmorphicCard } from "./ui/GlassmorphicCard";
 
 const Services = () => {
   const services = [
@@ -52,6 +53,29 @@ const Services = () => {
             Nossa plataforma SaaS oferece ferramentas avançadas para simplificar e otimizar
             processos administrativos e clínicos, reduzindo custos e aumentando a eficiência.
           </p>
+        </div>
+        
+        {/* Platform preview image */}
+        <div className="mb-16 max-w-4xl mx-auto">
+          <GlassmorphicCard 
+            className="p-6 relative overflow-hidden transform hover:scale-[1.02] transition-all duration-500"
+            intensity="high"
+            hoverEffect={true}
+          >
+            <div className="relative z-10">
+              <img 
+                src="/lovable-uploads/95d0a092-cac9-4b30-ad43-79f0eee2562f.png" 
+                alt="Interface da plataforma HealthChain Lazarus" 
+                className="w-full rounded-lg shadow-2xl"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-lg opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end justify-center">
+                <div className="p-4 text-center">
+                  <p className="text-white font-medium text-lg">Painel Analítico Lazarus</p>
+                  <p className="text-white/80 text-sm">Interface intuitiva e poderosa para gestão completa</p>
+                </div>
+              </div>
+            </div>
+          </GlassmorphicCard>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 stagger-children">
