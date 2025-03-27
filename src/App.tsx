@@ -16,13 +16,12 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <div 
-          className="min-h-screen bg-[#0e1a28] text-white bg-cover bg-center bg-no-repeat"
+          className="min-h-screen bg-background text-foreground overflow-hidden"
           style={{
-            backgroundImage: 'url("/lovable-uploads/c26bc424-605b-4ee8-aafd-2a6e50e05d44.png")',
-            backgroundSize: '400px',
+            backgroundImage: 'radial-gradient(circle at 50% 50%, rgba(6, 182, 212, 0.1) 0%, rgba(10, 37, 64, 0.2) 50%, transparent 100%)',
+            backgroundSize: '100% 100%',
             backgroundPosition: 'center',
-            backgroundBlendMode: 'overlay',
-            backgroundColor: 'hsl(var(--background))'
+            backgroundBlendMode: 'overlay'
           }}
         >
           <Routes>
