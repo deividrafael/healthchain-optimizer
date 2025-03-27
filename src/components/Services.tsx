@@ -1,6 +1,6 @@
 
 import { FeatureCard } from "@/components/ui/FeatureCard";
-import { ClipboardCheck, Database, BarChart3, ShieldCheck, FileSearch, Brain, ArrowRight, CheckCircle } from "lucide-react";
+import { ClipboardCheck, Database, BarChart3, ShieldCheck, FileSearch, Brain, ArrowRight, CheckCircle, BellRing} from "lucide-react";
 import { GlassmorphicCard } from "./ui/GlassmorphicCard";
 import { Button } from "@/components/ui/button";
 
@@ -27,9 +27,9 @@ const Services = () => {
       description: "Garanta a integridade e imutabilidade dos registros com nossa tecnologia blockchain integrada."
     },
     {
-      icon: <FileSearch className="h-8 w-8" />,
-      title: "Prevenção de Glosas",
-      description: "Identifique e corrija potenciais glosas antes que ocorram, otimizando o fluxo de caixa."
+      icon: <BellRing className="h-8 w-8" />,
+      title: "Sistema Red Flag",
+      description: "Identifique e atue preventivamente em auditorias, otimizando o fluxo de caixa."
     },
     {
       icon: <Brain className="h-8 w-8" />,
@@ -108,7 +108,7 @@ const Services = () => {
             {services.map((service, index) => (
               <GlassmorphicCard 
                 key={index}
-                className="p-6 animate-in hover-scale group"
+                className="p-6 hover-scale group"
                 hoverEffect
               >
                 <div className="flex flex-col h-full">
@@ -161,11 +161,7 @@ const Services = () => {
               </div>
               <div className="md:col-span-2 relative">
                 <div className="aspect-square bg-gradient-to-br from-health-500/5 to-blue-500/5 rounded-full flex items-center justify-center p-12">
-                  <img 
-                    src="/lovable-uploads/c26bc424-605b-4ee8-aafd-2a6e50e05d44.png" 
-                    alt="Logo HealthChain" 
-                    className="w-full opacity-60"
-                  />
+                
                 </div>
                 <div className="absolute top-0 left-0 w-full h-full bg-[url('/lovable-uploads/c26bc424-605b-4ee8-aafd-2a6e50e05d44.png')] bg-no-repeat bg-center opacity-10 bg-contain rounded-full animate-pulse-slow"></div>
               </div>

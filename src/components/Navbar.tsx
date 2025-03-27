@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { GlassmorphicCard } from "@/components/ui/GlassmorphicCard";
@@ -46,6 +45,9 @@ const Navbar = () => {
               alt="HealthChain Logo" 
               className="h-8 mr-2" 
             />
+            <div className="text-lg font-semibold text-foreground">
+              HealthChain Solutions
+            </div>
           </a>
         </div>
 

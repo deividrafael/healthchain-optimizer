@@ -7,14 +7,14 @@ const Footer = () => {
   return (
     <footer className="py-12 relative overflow-hidden bg-gradient-to-b from-background to-health-50/20 dark:to-health-950/20">
       <div className="section-container">
-        <GlassmorphicCard className="p-8 animate-in">
+        <GlassmorphicCard className="p-8">
           <div className="grid md:grid-cols-4 gap-10">
             <div className="md:col-span-1">
               <div className="text-xl font-bold text-foreground mb-4">
-                HealthChain<span className="text-health-600">Solutions</span>
+                HealthChain<span className="text-health-600"> Solutions</span>
               </div>
               <p className="text-muted-foreground mb-6">
-                Simplificando e otimizando processos administrativos e clínicos para o setor de saúde.
+                Maximizando o valor da saúde com inteligência e segurança.
               </p>
             </div>
             

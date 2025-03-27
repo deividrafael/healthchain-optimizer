@@ -1,4 +1,3 @@
-
 import { GlassmorphicCard } from "@/components/ui/GlassmorphicCard";
 import { AnimatedGradient } from "@/components/ui/AnimatedGradient";
 import { Blocks, Database, Brain, Shield, Activity, BarChart3 } from "lucide-react";
@@ -15,31 +14,35 @@ const Technology = () => {
       <div className="section-container relative z-10">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="order-2 md:order-1 relative">
-            <GlassmorphicCard className="p-8 md:p-10 relative z-10 overflow-hidden animate-in">
+            <GlassmorphicCard className="p-8 md:p-10 relative z-10 overflow-hidden">
               <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute -top-20 -right-20 w-40 h-40 bg-health-500/10 rounded-full filter blur-3xl"></div>
                 <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-blue-500/10 rounded-full filter blur-3xl"></div>
-              </div>
+              </div> 
               
               <div className="relative z-10 grid grid-cols-2 gap-8">
+                {/* Blockchain */}
                 <div className="flex flex-col items-center text-center p-4 rounded-lg bg-white/30 dark:bg-white/5 border border-white/20 shadow-sm">
                   <Blocks className="h-10 w-10 text-health-600 mb-3" />
                   <h3 className="font-medium">Blockchain</h3>
                   <p className="text-sm text-muted-foreground mt-2">Segurança e imutabilidade de dados</p>
                 </div>
                 
+                {/* Motor de Regras */}
                 <div className="flex flex-col items-center text-center p-4 rounded-lg bg-white/30 dark:bg-white/5 border border-white/20 shadow-sm">
                   <Brain className="h-10 w-10 text-health-600 mb-3" />
                   <h3 className="font-medium">Motor de Regras</h3>
                   <p className="text-sm text-muted-foreground mt-2">Automação inteligente de processos</p>
                 </div>
                 
+                {/* Base de Dados */}
                 <div className="flex flex-col items-center text-center p-4 rounded-lg bg-white/30 dark:bg-white/5 border border-white/20 shadow-sm">
                   <Database className="h-10 w-10 text-health-600 mb-3" />
                   <h3 className="font-medium">Base de Dados</h3>
                   <p className="text-sm text-muted-foreground mt-2">Armazenamento seguro e eficiente</p>
                 </div>
                 
+                {/* Análise Preditiva */}
                 <div className="flex flex-col items-center text-center p-4 rounded-lg bg-white/30 dark:bg-white/5 border border-white/20 shadow-sm">
                   <Activity className="h-10 w-10 text-health-600 mb-3" />
                   <h3 className="font-medium">Análise Preditiva</h3>
@@ -47,11 +50,6 @@ const Technology = () => {
                 </div>
               </div>
             </GlassmorphicCard>
-            
-            <AnimatedGradient 
-              className="absolute inset-0 -z-10 opacity-30 rounded-xl transform scale-[0.98] translate-y-3"
-              colors={["from-health-600/40", "via-blue-500/40", "to-indigo-600/40"]}
-            />
           </div>
           
           <div className="order-1 md:order-2 space-y-6">

@@ -60,7 +60,7 @@ const Contact = () => {
           </div>
           
           <div className="relative">
-            <GlassmorphicCard className="p-8 animate-in">
+            <GlassmorphicCard className="p-8">
               <form className="space-y-6">
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-sm font-medium">

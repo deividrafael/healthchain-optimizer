@@ -56,7 +56,7 @@ const Benefits = () => {
         </div>
         
         <div className="grid gap-8 lg:grid-cols-3">
-          <GlassmorphicCard className="lg:col-span-1 p-8 animate-in">
+          <GlassmorphicCard className="lg:col-span-1 p-8">
             <h3 className="text-2xl font-bold mb-6">Por que escolher a HealthChain Solutions?</h3>
             <p className="text-muted-foreground mb-8">
               Nossa solução combina tecnologias inovadoras para criar um sistema 
@@ -78,7 +78,7 @@ const Benefits = () => {
           
           <div className="lg:col-span-2 grid sm:grid-cols-2 gap-8 stagger-children">
             {benefits.map((benefit, index) => (
-              <div key={index} className="animate-in">
+              <div>
                 <div className={`p-3 rounded-lg inline-block ${benefit.bgColor} ${benefit.color} mb-4`}>
                   {benefit.icon}
                 </div>
